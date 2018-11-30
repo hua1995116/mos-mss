@@ -7,7 +7,7 @@ mtyun MSS(Meituan Storage Service) sdk for Node.js
 ## install
 
 ```js
-npm install mos-mss --save
+npm install mos-mss-node6 --save
 ```
 
 # Overview
@@ -25,7 +25,7 @@ Constructs a service object. This object has one method for each API operation.
 examples:
 
 ```js
-var MSS = require('mos-mss');
+var MSS = require('mos-mss-node6');
 
 var client = new MSS({
     accessKeyId: '<accessKeyId>',
@@ -83,7 +83,7 @@ Returns a list of all buckets owned by the authenticated sender of the request.
 Examples:
 
 ```js
-var MSS = require('mos-mss');
+var MSS = require('mos-mss-node6');
 var client = new MSS({
     accessKeyId: '<accessKeyId>',
     accessKeySecret: '<accessKeySecret>'
@@ -121,7 +121,7 @@ Creates a new bucket.
 Examples:
 
 ```js
-var MSS = require('mos-mss');
+var MSS = require('mos-mss-node6');
 var client = new MSS({
     accessKeyId: '<accessKeyId>',
     accessKeySecret: '<accessKeySecret>'
@@ -152,7 +152,7 @@ Deletes the bucket. All objects (including all object versions and Delete Marker
 Examples:
 
 ```js
-var MSS = require('mos-mss');
+var MSS = require('mos-mss-node6');
  
 var client = new MSS({
     accessKeyId: '<accessKeyId>',
@@ -183,7 +183,7 @@ Gets the access control policy for the bucket.
 Examples:
 
 ```js
-var MSS = require('mos-mss');
+var MSS = require('mos-mss-node6');
 var client = new MSS({
     accessKeyId: '<accessKeyId>',
     accessKeySecret: '<accessKeySecret>'
@@ -229,7 +229,7 @@ Sets the permissions on a bucket using access control lists (ACL).
 Examples:
 
 ```js
-var MSS = require('mos-mss');
+var MSS = require('mos-mss-node6');
 var client = new MSS({
     accessKeyId: '<accessKeyId>',
     accessKeySecret: '<accessKeySecret>'
@@ -263,7 +263,7 @@ This operation is useful to determine if a bucket exists and you have permission
 Examples:
 
 ```js
-var MSS = require('mos-mss');
+var MSS = require('mos-mss-node6');
 var client = new MSS({
     accessKeyId: '<accessKeyId>',
     accessKeySecret: '<accessKeySecret>'
@@ -295,7 +295,7 @@ Get the bucket object lifecycle.
 Examples:
 
 ```js
-var MSS = require('mos-mss');
+var MSS = require('mos-mss-node6');
 var client = new MSS({
     accessKeyId: '<accessKeyId>',
     accessKeySecret: '<accessKeySecret>'
@@ -351,7 +351,7 @@ Set the bucket object lifecycle.
 Examples:
 
 ```js
-var MSS = require('mos-mss');
+var MSS = require('mos-mss-node6');
 var client = new MSS({
     accessKeyId: '<accessKeyId>',
     accessKeySecret: '<accessKeySecret>'
@@ -424,7 +424,7 @@ Deletes the lifecycle configuration from the bucket.
 Examples:
 
 ```js
-var MSS = require('mos-mss');
+var MSS = require('mos-mss-node6');
 var client = new MSS({
     accessKeyId: '<accessKeyId>',
     accessKeySecret: '<accessKeySecret>'
@@ -455,7 +455,7 @@ Returns the policy of a specified bucket.
 Examples:
 
 ```js
-var MSS = require('mos-mss');
+var MSS = require('mos-mss-node6');
 var client = new MSS({
     accessKeyId: '<accessKeyId>',
     accessKeySecret: '<accessKeySecret>'
@@ -488,7 +488,7 @@ Replaces a policy on a bucket. If the bucket already has a policy, the one in th
 Examples:
 
 ```js
-var MSS = require('mos-mss');
+var MSS = require('mos-mss-node6');
 var client = new MSS({
     accessKeyId: '<accessKeyId>',
     accessKeySecret: '<accessKeySecret>'
@@ -556,7 +556,7 @@ Returns the cors configuration for the bucket.
 Examples:
 
 ```js
-var MSS = require('mos-mss');
+var MSS = require('mos-mss-node6');
 var client = new MSS({
     accessKeyId: '<accessKeyId>',
     accessKeySecret: '<accessKeySecret>'
@@ -588,7 +588,7 @@ Sets the cors configuration for a bucket.
 Examples:
 
 ```js
-var MSS = require('mos-mss');
+var MSS = require('mos-mss-node6');
 var client = new MSS({
     accessKeyId: '<accessKeyId>',
     accessKeySecret: '<accessKeySecret>'
@@ -647,7 +647,7 @@ Deletes the cors configuration information set for the bucket.
 Examples:
 
 ```js
-var MSS = require('mos-mss');
+var MSS = require('mos-mss-node6');
 var client = new MSS({
     accessKeyId: '<accessKeyId>',
     accessKeySecret: '<accessKeySecret>'
@@ -682,7 +682,7 @@ Examples:
 
 ```js
 // file: String
-var MSS = require('mos-mss');
+var MSS = require('mos-mss-node6');
 var path = require('path');
 var client = new MSS({
     accessKeyId: '<accessKeyId>',
@@ -698,7 +698,7 @@ result.then(function (res) {
 });
 
 // file: Buffer
-var MSS = require('mos-mss');
+var MSS = require('mos-mss-node6');
 var client = new MSS({
     accessKeyId: '<accessKeyId>',
     accessKeySecret: '<accessKeySecret>',
@@ -735,7 +735,7 @@ Adds an object to a bucket.
 Examples:
 
 ```js
-var MSS = require('mos-mss');
+var MSS = require('mos-mss-node6');
 var path = require('path');
 var fs = require('fs');
 var client = new MSS({
@@ -779,7 +779,7 @@ Examples:
 
 ```js
 // Piecewise upload
-var MSS = require('mos-mss');
+var MSS = require('mos-mss-node6');
 var path = require('path');
 var fs = require('fs');
 var client = new MSS({
@@ -804,7 +804,7 @@ result.then(function (res) {
 });
 
 // Breakpoint upload
-var MSS = require('mos-mss');
+var MSS = require('mos-mss-node6');
 var path = require('path');
 var fs = require('fs');
 var client = new MSS({
@@ -859,7 +859,7 @@ Abort a multipart upload for object.
 Examples:
 
 ```js
-var MSS = require('mos-mss');
+var MSS = require('mos-mss-node6');
 var client = new MSS({
     accessKeyId: '<accessKeyId>',
     accessKeySecret: '<accessKeySecret>',
@@ -894,7 +894,7 @@ a list of parts that has been uploaded.
 Examples:
 
 ```js
-var MSS = require('mos-mss');
+var MSS = require('mos-mss-node6');
 var client = new MSS({
     accessKeyId: '<accessKeyId>',
     accessKeySecret: '<accessKeySecret>',
@@ -928,7 +928,7 @@ Retrieves objects from mos S3.
 Examples:
 
 ```js
-var MSS = require('mos-mss');
+var MSS = require('mos-mss-node6');
 var path = require('path');
 var client = new MSS({
     accessKeyId: '<accessKeyId>',
@@ -969,7 +969,7 @@ Return:
 Examples:
 
 ```js
-var MSS = require('mos-mss');
+var MSS = require('mos-mss-node6');
 var client = new MSS({
     accessKeyId: '<accessKeyId>',
     accessKeySecret: '<accessKeySecret>',
@@ -1012,7 +1012,7 @@ Set to ```{}``` if a request error occurs. The data object has the following pro
 Examples:
 
 ```js
-var MSS = require('mos-mss');
+var MSS = require('mos-mss-node6');
 var client = new MSS({
     accessKeyId: '<accessKeyId>',
     accessKeySecret: '<accessKeySecret>',
@@ -1064,7 +1064,7 @@ Returns all of the objects in a bucket.
 Examples:
 
 ```js
-var MSS = require('mos-mss');
+var MSS = require('mos-mss-node6');
 var client = new MSS({
     accessKeyId: '<accessKeyId>',
     accessKeySecret: '<accessKeySecret>',
@@ -1108,7 +1108,7 @@ Creates a copy of an object that is already stored in mss S3.
 Examples:
 
 ```js
-var MSS = require('mos-mss');
+var MSS = require('mos-mss-node6');
 var client = new MSS({
     accessKeyId: '<accessKeyId>',
     accessKeySecret: '<accessKeySecret>',
@@ -1144,7 +1144,7 @@ Retrieves objects meta from mos S3.
 Examples:
 
 ```js
-var MSS = require('mos-mss');
+var MSS = require('mos-mss-node6');
 var client = new MSS({
     accessKeyId: '<accessKeyId>',
     accessKeySecret: '<accessKeySecret>',
@@ -1180,7 +1180,7 @@ Deletes an object.
 Examples:
 
 ```js
-var MSS = require('mos-mss');
+var MSS = require('mos-mss-node6');
 var client = new MSS({
     accessKeyId: '<accessKeyId>',
     accessKeySecret: '<accessKeySecret>',
@@ -1215,7 +1215,7 @@ Deletes objects by query.
 Examples:
 
 ```js
-var MSS = require('mos-mss');
+var MSS = require('mos-mss-node6');
 var client = new MSS({
     accessKeyId: '<accessKeyId>',
     accessKeySecret: '<accessKeySecret>',
@@ -1248,7 +1248,7 @@ Set to ```{}``` if a request error occurs.
 Examples:
 
 ```js
-var MSS = require('mos-mss');
+var MSS = require('mos-mss-node6');
 var client = new MSS({
     accessKeyId: '<accessKeyId>',
     accessKeySecret: '<accessKeySecret>',
